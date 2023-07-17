@@ -6,7 +6,7 @@ const app = express()
 
 const PORT = 8080
 
- app.get("/signln", (_, res) => {
+ app.get("/signlnm", (_, res) => {
     const signinHTML = fs.readFileSync(__dirname + "/html/signIn.html", "utf-8")
     res.send(signlnHTML)
  })
