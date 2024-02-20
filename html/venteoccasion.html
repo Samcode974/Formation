@@ -21,25 +21,94 @@
           </ul>
       </nav>
     </header>                       
-  
-                      
+                     
   <main>
 <div>
 <h1>Nos gammes de voitures</h1>
-    <select>
+    <select class="form-select" aria-label="Default select example">
         <option value="kilometrage">Kilométrage</option>
     </select>
-    <select>
+    <select class="form-select" aria-label="Default select example">
       <option value="prix">Prix</option>
     </select>
-    <select>
+    <select class="form-select" aria-label="Default select example">
       <option valeur="année">Année</option>
     </select>
 </div>
 
-  <img src="/image/OPEL-CORSA.jpeg" alt="corsa" width="100%" height="70px">
+<div class="container-fluid">
+  <div class="col-12 mb-7 pt-5">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
+        <div class="card">
+          <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="image/OPEL-CORSA.jpeg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <em>Opel Corsa 1.3 CDCI 75 CH DIESEL </em>
+                    </h5>
+                </div>
+                <p class="card-text">Année : 2008 <br> Diesel <br> 177 220km <hr> 4790 €</p>
+                <a href="" class="btn btn-primary">Détails</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="/image/land-rover.webp" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <em>LAND ROVER FREELANDER SX 112CH 4X4</em>
+                    </h5>
+                </div>
+                <p class="card-text">Année : 2001 <br> Diesel <br> 184 200km <hr> 7290 €</p>
+                <a href="" class="btn btn-primary">Détails</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="/image/polo.jpeg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <em>VOLKSWAGEN POLO 1.6 TDI 75CH</em>
+                    </h5>
+                </div>
+                <p class="card-text">Année : 2010 <br> Diesel <br> 177261km <hr> 7290 €</p>
+                <a href="" class="btn btn-primary">Détails</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  
 
+    <form method="post">
+        <div class="form-group mt-5">
+          <label for="full_name">Nom:</label>
+          <input type="text" id="full_name" class="form-group m-4" name="lastname" placeholder="Votre nom" required>
+        </div>
+        <div class="form-group">
+          <label for="full_name">Prénom:</label>
+          <input type="text" id="full_name" class="form-group m-4" name="firstname" placeholder="Votre prénom" required>
+        </div>
+        <div class="form-group">
+          <label for="email_addr">Adresse e-mail :</label>
+          <input name="mail" class="form-group m-4" type="email" id="email_addr" name="email_addr" required>
+        </div>
+        <div class="form-group">
+          <label for="tel">Votre numéro de téléphone :</label>
+          <input id="tel" type="tel" class="form-group m-4" name="telephone"  required>
+        </div>
+        <textarea class="m-4" name="message" id="" placeholder="Véhicule qui vous intéresses" cols="30" rows="5"></textarea>
+     <br>
+     <button class="btn btn-primary m-4" type="submit">Valider votre envoi</button> 
+   </form>
+  
 
+  
 
 </main>
 

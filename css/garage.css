@@ -1,8 +1,60 @@
+
+
 h1 {
     background-color: red;
+    text-align: center;
+}
+
+p {
+    margin: 20px 65px;
+    text-align: -webkit-center;
+}
+
+.container-form{
+    max-width: 500px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.card {
+    height: 100%;
+}
+.card-text {
+    text-align: left;
+}
+
+.card-columns {
+    display: inline-flex;
+  }
+
+.card-img-top{
+    width: auto;
+    height: 190px;
+    object-fit: cover;
+}
+
+.card-img-plt{
+    width: 100%;
+    height: auto;
+    object-fit: cover ;
 }
 
 footer {
     background-color: black;
     color:white ;
 }
+
+.carouselCustom{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.carouselCustom .carousel-item {
+    height: 450px;
+    object-fit: cover ;
+}
+
+.carouselCustom .carousel-item img {
+    height: 100%;
+    object-fit: cover;
+} 

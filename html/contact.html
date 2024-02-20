@@ -22,32 +22,41 @@
   </nav>
 </header>
 <main>
-<h1>Nous contactez</h1>
-    <p>Vous souhaitez nous joindre où prendre un rendez-vous pour une prestation.
+
+  <h1 class="p-2 mt-5 text-white">Nous contactez</h1>
+    <p>Vous souhaitez nous joindre où prendre un rendez-vous pour une prestation. <br>
         Remplisez ce formulaire pour que nous puissons vous recontacter!
     </p>
 
-    <form >
+    <div class="container-form">
 
-     <label>Nom:</label>
-     <input type="text" id="full_name" name="lastname" placeholder="Votre nom" required>
-     <label>Prénom:</label>
-     <input type="text" id="full_name" name="firstname" placeholder="Votre prénom" required>
-     <br>
-     <label>Adresse e-mail :</label>
-     <input type="email" id="email_addr" name="email_addr" required>
-
-     <br>
-     <label>Confirmez l'adresse e-mail :</label>
-     <input type="email" id="email_addr_repeat" name="email_addr_repeat" required 
-      oninput="check(this)">
-
-     <br>
-     <label>Votre numéro de téléphone :</label>
-     <input type="tel" id="telephone" name="telephone"  required>
-     <br>
-     <input type="submit" value="Valider votre formulaire" /> 
-   </form>
+      <form method="post">
+          <div class="form-group">
+            <label for="full_name">Nom:</label>
+            <input type="text" id="full_name" class="form-control m-4" name="lastname" placeholder="Votre nom" required>
+          </div>
+          <div class="form-group">
+            <label for="full_name">Prénom:</label>
+            <input type="text" id="full_name" class="form-control m-4" name="firstname" placeholder="Votre prénom" required>
+          </div>
+          <div class="form-group">
+            <label for="email_addr">Adresse e-mail :</label>
+            <input name="mail" class="form-control m-4" type="email" id="email_addr" name="email_addr" required>
+          </div>
+          <div class="form-group">
+            <label for="email_addr_repeat">Confirmez l'adresse e-mail :</label>
+            <input name="confirmation mail" class="form-control m-4" type="email" id="email_addr_repeat" name="email_addr_repeat" required 
+           oninput="check(this)">
+          </div>
+          <div class="form-group">
+            <label for="tel">Votre numéro de téléphone :</label>
+            <input id="tel" type="tel" class="form-control m-4" name="telephone"  required>
+          </div>
+          <textarea class="m-4" name="message" id="" placeholder="Message" cols="50" rows="20"></textarea>
+       <br>
+       <button class="btn btn-primary m-4" type="submit">Valider votre envoi</button> 
+     </form>
+    </div>
 
 
 

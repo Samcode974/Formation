@@ -8,7 +8,7 @@ const PORT = 8080
 
  app.get("/signIn", (_, res) => {
     const signinHTML = fs.readFileSync(__dirname + "/html/signIn.html", "utf-8")
-    res.send(signlnHTML)
+    res.send(signinHTML)
  })
 
  app.get("/signUp", (_, res) => {
@@ -39,6 +39,7 @@ const PORT = 8080
  app.use("/bootstrap", express.static(__dirname + "/bootstrap"))
  
  app.use("/css", express.static(__dirname + "/css"))
+ app.use("/image", express.static(__dirname + "/image"))
  
  app.use('*', (req, res) => {
    res.send(fs.readFileSync(__dirname + "/html/notfound.html", "utf-8"))

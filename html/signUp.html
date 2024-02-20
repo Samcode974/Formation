@@ -1,12 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
-        <title>page d'inscription</title>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width" , initial-scale="1">
+        <title>page d'inscription</title>
+        <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" >
+        <link rel="stylesheet" href="/bootstrap/js/bootstrap.min.js">
         <link rel="stylesheet" href="/css/style.css">
     </head>
-
     <body>
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+              <a class="navbar-brand" href="#">GARAGE V.PARROT</a>
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                  <li class="nav-item"><a class="nav-link" href="/signIn">Se connecter</a></li>
+                  <li class="nav-item"><a class="nav-link active" href="/signUp">Créer un compte</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/index">Accueil</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/venteoccasion">Vente Occasion</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>  
         <section id="main">
             <div class="titleBox">
                 <h1>Nouveau Compte</h1>
@@ -14,19 +28,22 @@
             </div>
 
             <div class="inputBox">
-                <input type="email" class="input">
+                <label for="mail"> </label>
+                <input id="mail" placeholder="Votre mail" type="email" class="input">
                 <p class="inputName">E-MAIL</p>
             </div>
             <p class="errorMessage"></p>
 
             <div class="inputBox">
-                <input type="password" class="input">
+                <label for="password"> </label>
+                <input name="paswword" id="password" placeholder="Mot de passe" type="password" class="input">
                 <p class="inputName">MOT DE PASSE</p>
             </div>
             <p class="errorMessage"></p>
 
             <div class="inputBox">
-                <input type="password" class="input">
+                <label for="confirPass"></label>
+                <input id="confirPass" name="passBis" placeholder="Confirmer mot de passe" type="password" class="input">
                 <p class="inputName">CONFIRMER MDP</p>
             </div>
             <p class="errorMessage"></p>
@@ -35,7 +52,7 @@
 
             <div class="switchPage">
                 <p>vous avez déjà un compte ?</p>
-                <a href="/html/signIn.html">connectez-vous</a>
+                <a href="/signIn">connectez-vous</a>
             </div>
         </section>
     </body>
